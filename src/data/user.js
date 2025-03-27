@@ -7,7 +7,7 @@ const INFO = {
 	},
 
 	socials: {
-		github: "https://github.com/Aekkarinkanbaiya/portfolio",
+		github: "https://github.com/Aekkarinkanbaiya/reactfolio-Aekkarin.git",
 		facebook: "https://www.facebook.com/aekkarin.kanbaiya/",
 		instagram: "https://www.instagram.com/akr_kby/"
 	},
