@@ -69,6 +69,32 @@
 	display: none;
 }
 
+/* ✅ รูปภาพใหม่ที่ด้านซ้ายล่าง */
+.about-image-container.small-image {
+	margin-top: 15px;
+	align-self: flex-start;  /* จัดวางให้ชิดซ้ายล่าง */
+}
+
+.about-small-image {
+	width: 100px;
+	height: auto;
+	border-radius: 10px;
+	box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* ✅ ข้อความข้างล่าง */
+.about-extra-text {
+	margin-top: 30px;
+	text-align: center;
+	font-size: 16px;
+	font-style: italic;
+	color: #333;
+	max-width: 600px;
+	margin: auto;
+	padding: 0 20px;
+}
+
+/* ✅ ปรับให้ responsive */
 @media (max-width: 1024px) {
 	.about-logo {
 		z-index: 100;
@@ -113,5 +139,13 @@
 
 	.about-image-container {
 		width: 80%;
+	}
+
+	.about-image-container.small-image {
+		align-self: center; /* ปรับให้อยู่ตรงกลางบนหน้าจอเล็ก */
+	}
+
+	.about-small-image {
+		width: 80px; /* ลดขนาดให้เล็กลงในมือถือ */
 	}
 }

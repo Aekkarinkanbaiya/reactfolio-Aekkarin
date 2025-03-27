@@ -44,23 +44,20 @@ const About = () => {
 								<div className="title about-title">
 									{INFO.about.title}
 								</div>
-
 								<div className="subtitle about-subtitle">
 									{INFO.about.description}
 								</div>
 							</div>
-
 							<div className="about-left-side">
 								<div className="about-image-container">
 									<div className="about-image-wrapper">
 										<img
-											src="about.jpg"
+											src="Aekkarin2.jpg"
 											alt="about"
 											className="about-image"
 										/>
 									</div>
 								</div>
-
 								<div className="about-socials">
 									<Socials />
 								</div>
