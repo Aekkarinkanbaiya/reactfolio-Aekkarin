@@ -2,51 +2,65 @@
 	display: flex;
 	justify-content: left;
 	padding-top: 25px;
-}
-
-.articles-logo {
+  }
+  
+  .articles-logo {
 	display: flex;
 	position: fixed;
 	border: 1px solid white;
 	border-radius: 50%;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 	top: 4vh;
-}
-
-.articles-main-container {
+	z-index: 999;
+  }
+  
+  .articles-container {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	height: 100vh;
 	margin: 0;
 	padding-top: 120px;
-}
-
-.articles-container {
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .articles-title {
+	text-align: center;
+	margin: 20px auto;
+  }
+  
+  .articles-images-container { /* สร้าง container สำหรับรูปภาพสองภาพ */
 	display: flex;
-	flex-direction: column;
-}
-
-.articles-wrapper {
-	padding-top: 50px;
-	padding-bottom: 50px;
-	display: flex;
-	flex-direction: column;
-}
-
-.articles-article {
-	padding-top: 0px;
-	padding-left: 35px;
-	padding-bottom: 20px;
-	border-left: 2px solid #f4f4f5;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .articles-image-container {
+	width: 500px; /* ลดขนาดความกว้างเพื่อให้รูปภาพพอดีกัน */
+	height: 500px; /* ลดขนาดความสูงเพื่อให้รูปภาพพอดีกัน */
+	margin: 0 10px; /* เพิ่ม margin เพื่อเว้นระยะห่างระหว่างรูปภาพ */
+  }
+  
+  .articles-image-wrapper {
+	overflow: hidden;
+	border-radius: 10%;
+	transform: rotate(0deg);
 	width: 100%;
-}
-
-@media (max-width: 1024px) {
-	.articles-title {
-		width: 100% !important;
+	height: 100%;
+  }
+  
+  .articles-image-wrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+  }
+  
+  @media (max-width: 600px) {
+	.articles-container {
+	  padding-top: 60px;
 	}
-
-	.articles-subtitle {
-		width: 100% !important;
+  
+	.articles-project {
+	  width: calc(100% / 2);
 	}
-}
+  }

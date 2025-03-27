@@ -2,9 +2,9 @@
 	display: flex;
 	justify-content: left;
 	padding-top: 25px;
-}
-
-.projects-logo {
+  }
+  
+  .projects-logo {
 	display: flex;
 	position: fixed;
 	border: 1px solid white;
@@ -12,22 +12,51 @@
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
 	top: 4vh;
 	z-index: 999;
-}
-
-.projects-container {
+  }
+  
+  .projects-container {
 	display: flex;
 	flex-direction: column;
-	height: 100%;
+	height: 100vh;
 	margin: 0;
 	padding-top: 120px;
-}
-
-@media (max-width: 600px) {
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .projects-title {
+	text-align: center;
+	margin: 20px auto;
+  }
+  
+  .projects-image-container {
+	width: 500px; /* เพิ่มขนาดความกว้าง */
+	height: 500px; /* เพิ่มขนาดความสูง */
+	display: flex;
+	justify-content: center;
+	align-items: center;
+  }
+  
+  .projects-image-wrapper {
+	overflow: hidden;
+	border-radius: 10%;
+	transform: rotate(0deg);
+	width: 100%;
+	height: 100%;
+  }
+  
+  .projects-image-wrapper img {
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
+  }
+  
+  @media (max-width: 600px) {
 	.projects-container {
-		padding-top: 60px;
+	  padding-top: 60px;
 	}
-
+  
 	.projects-project {
-		width: calc(100% / 2);
+	  width: calc(100% / 2);
 	}
-}
+  }
